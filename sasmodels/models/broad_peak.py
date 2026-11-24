@@ -18,12 +18,14 @@ The scattering intensity $I(q)$ is calculated as
 
 Here the peak position is related to the d-spacing as $q_0 = 2\pi / d_0$.
 
-The symbols are given with each parameter in the table below. $B$ is the
-flat background, and the exponent $p$ acts on the peak term only.
+Special cases of this model:
 
-With $A = 0$ and $q_0 = 0$, the model reduces to the lorentz model for
-$m = 2$, $p = 1$, and to the Debye-Anderson-Brumberger (dab) model for
-$m = 2$, $p = 2$ (with $C = \xi^3$).
+* :ref:`power-law`: $C = 0$
+* :ref:`porod`: $C = 0$ and $n = 4$
+* :ref:`correlation-length`: $q_0 = 0$ and $p = 1$
+* :ref:`lorentz`: $A = 0$, $q_0 = 0$, $m = 2$ and $p = 1$
+* :ref:`peak-lorentz`: $A = 0$, $m = 2$ and $p = 1$, with $\xi$ = 1/peak_hwhm
+* :ref:`dab`: $A = 0$, $q_0 = 0$, $m = 2$, $p = 2$ and $C = \xi^3$
 
 .. note::
    In sasmodels 1.1.0 and earlier (SasView 6.2.x and earlier), $p$ was
